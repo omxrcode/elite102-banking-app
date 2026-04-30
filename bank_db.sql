@@ -1,0 +1,16 @@
+CREATE DATABASE IF NOT EXISTS banking_system;
+
+USE banking_system;
+
+CREATE TABLE IF NOT EXISTS accounts (
+    name VARCHAR(100) PRIMARY KEY,
+    balance DECIMAL(10, 2) NOT NULL DEFAULT 0.00
+);
+
+CREATE TABLE IF NOT EXISTS transactions (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    account_name VARCHAR(100),
+    type VARCHAR(20),
+    amount DECIMAL(10, 2),
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
