@@ -6,9 +6,13 @@ A terminal-based banking system built with Python and MySQL for the Elite 102 co
 
 - Create bank accounts with a starting balance
 - Deposit and withdraw money (prevents negative balances)
+- Transfer money between accounts
+- Delete accounts (requires zero balance + confirmation)
 - Check individual account balances
-- View all accounts in a formatted table
+- View all accounts with total balance
 - Transaction history with timestamps
+- Input validation on all operations
+- Startup connection check
 - Data saved permanently using MySQL
 
 ## Files
@@ -56,10 +60,12 @@ python bank_mysql.py
 1. Create Account
 2. Deposit
 3. Withdraw
-4. Check Balance
-5. All Accounts
-6. Transaction History
-7. Exit
+4. Transfer Money
+5. Check Balance
+6. All Accounts
+7. Transaction History
+8. Delete Account
+9. Exit
 ```
 
 ## Built With
